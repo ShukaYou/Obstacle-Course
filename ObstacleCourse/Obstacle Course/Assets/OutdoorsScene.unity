@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2026.1143, g: 1992.4082, b: 2399.0625, a: 1}
+  m_IndirectSpecularColor: {r: 2025.7891, g: 1991.7949, b: 2398.5156, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 35837714}
   - component: {fileID: 35837713}
   - component: {fileID: 35837712}
+  - component: {fileID: 35837716}
   m_Layer: 0
   m_Name: wall Piece (2)
   m_TagString: Untagged
@@ -220,6 +221,18 @@ Transform:
   m_Father: {fileID: 1053989136}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &35837716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35837711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15301760feb854c4694954fbe9957819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &157207112
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698533954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.4, z: 0}
   m_LocalScale: {x: 8.1342, y: 8.1342, z: 8.1342}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -596,6 +609,7 @@ GameObject:
   - component: {fileID: 903651697}
   - component: {fileID: 903651696}
   - component: {fileID: 903651695}
+  - component: {fileID: 903651699}
   m_Layer: 0
   m_Name: wall Piece
   m_TagString: Untagged
@@ -681,6 +695,18 @@ Transform:
   m_Father: {fileID: 1053989136}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &903651699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903651694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15301760feb854c4694954fbe9957819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1053989135
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +731,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053989135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.682657, y: 1.8988087, z: 0.533618}
+  m_LocalPosition: {x: 0.682657, y: 1.11, z: 0.533618}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -728,6 +754,7 @@ GameObject:
   - component: {fileID: 1250610445}
   - component: {fileID: 1250610444}
   - component: {fileID: 1250610443}
+  - component: {fileID: 1250610447}
   m_Layer: 0
   m_Name: wall Piece (3)
   m_TagString: Untagged
@@ -813,6 +840,18 @@ Transform:
   m_Father: {fileID: 1053989136}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1250610447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250610442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15301760feb854c4694954fbe9957819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1573822955
 GameObject:
   m_ObjectHideFlags: 3
@@ -1008,7 +1047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
   m_LocalRotation: {x: 0.24742569, y: 0.025238415, z: -0.017521989, w: 0.9684196}
-  m_LocalPosition: {x: 0.96801084, y: 6.106509, z: -6.2242837}
+  m_LocalPosition: {x: 0.9680108, y: 5.66258, z: -6.224284}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1243,7 +1282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878745115}
   m_LocalRotation: {x: 0.24742569, y: 0.025238415, z: -0.017521989, w: 0.9684196}
-  m_LocalPosition: {x: 0.96801084, y: 6.106509, z: -6.2242837}
+  m_LocalPosition: {x: 0.9680108, y: 5.66258, z: -6.224284}
   m_LocalScale: {x: 0.68652, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1263,6 +1302,7 @@ GameObject:
   - component: {fileID: 1965876663}
   - component: {fileID: 1965876662}
   - component: {fileID: 1965876661}
+  - component: {fileID: 1965876665}
   m_Layer: 0
   m_Name: wall Piece (1)
   m_TagString: Untagged
@@ -1348,6 +1388,18 @@ Transform:
   m_Father: {fileID: 1053989136}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1965876665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965876660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15301760feb854c4694954fbe9957819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013410473
 GameObject:
   m_ObjectHideFlags: 1
@@ -1424,6 +1476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pirate Ship04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5968603675867669108, guid: 7111f2973314e9247ab83afa504a86be,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6458001092333451470, guid: 7111f2973314e9247ab83afa504a86be,
         type: 3}
       propertyPath: m_RootOrder
@@ -1437,7 +1494,7 @@ PrefabInstance:
     - target: {fileID: 6458001092333451470, guid: 7111f2973314e9247ab83afa504a86be,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4439293
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6458001092333451470, guid: 7111f2973314e9247ab83afa504a86be,
         type: 3}

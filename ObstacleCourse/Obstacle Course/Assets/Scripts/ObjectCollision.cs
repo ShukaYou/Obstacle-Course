@@ -7,5 +7,6 @@ public class ObjectCollision : MonoBehaviour
     private void OnCollisionEnter(Collision other) 
     {
         Debug.Log("Hit a wall!");
+        GetComponent<MeshRenderer>().material.color = Color.green;
     }
 }
