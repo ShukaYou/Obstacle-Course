@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class ObjectCollision : MonoBehaviour
 {
+
+    
     private void OnCollisionEnter(Collision other) 
     {
-        Debug.Log("Hit a wall!");
-        GetComponent<MeshRenderer>().material.color = Color.green;
+       if(other.gameObject.tag == "Player")
+       {
+           GetComponent<MeshRenderer>().material.color = Color.green;
+           gameObject.tag = "hit";
+       }
+        
     }
 }
