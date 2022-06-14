@@ -6,6 +6,7 @@ public class Mover : MonoBehaviour
 {
     //Variables that affect movement speed                     
     [SerializeField] float movementSpeed = 10f;
+    [SerializeField] Quaternion rotationAmount;
 
     void Start()
     {
@@ -25,9 +26,11 @@ public class Mover : MonoBehaviour
     }
     void MovePlayer()
     {
-        float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
-        float zValue = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
+        float xValue = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
+        float zValue = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
         
-        transform.Translate(zValue,0,xValue);
+        transform.Translate(xValue,0,zValue);
     }
+
+    
 }
