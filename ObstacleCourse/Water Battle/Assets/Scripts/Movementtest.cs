@@ -9,8 +9,8 @@ public class Movementtest : MonoBehaviour
 
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Vertical");
-        float verticalInput = Input.GetAxis("Horizontal");
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         //movementDirection();
