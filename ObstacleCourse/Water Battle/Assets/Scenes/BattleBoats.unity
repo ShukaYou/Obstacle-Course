@@ -687,27 +687,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3197224711615597249, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0994298e-14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3197224711615597249, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000016284306
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3197224711615597249, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0000006885962
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3197224711615597249, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000029762301
+      value: 0.00000002980323
       objectReference: {fileID: 0}
     - target: {fileID: 3197224711615597249, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000013969838
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3197224711615597249, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000073341644
+      value: 1.1641531e-10
       objectReference: {fileID: 0}
     - target: {fileID: 3197224713354419562, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
       propertyPath: m_Name
@@ -787,6 +787,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
+--- !u!1 &76104441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3197224713354419562, guid: 6c5a8ed5904625d43b215f2a4876aeda, type: 3}
+  m_PrefabInstance: {fileID: 76104440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &76104442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76104441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4b226947d1b904180176d136ad4117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!1 &77857842
 GameObject:
   m_ObjectHideFlags: 0
