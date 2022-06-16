@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Firing : MonoBehaviour
+public class playerAbilityHandler : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody bullet;
     public Rigidbody rb;
+    public class Ship;
+    public enum playerShip
+    {
+        Carrier
+    }
 
     void Start()
     {
@@ -17,6 +22,11 @@ public class Firing : MonoBehaviour
     void Update()
     {
         FireBullet();
+        
+        Ship == playerAbilityHandler.playerShip.Carrier)
+        {
+
+        }
     }
 
     void FireBullet()
