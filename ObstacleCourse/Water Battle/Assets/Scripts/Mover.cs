@@ -8,11 +8,13 @@ public class Mover : MonoBehaviour
     [SerializeField] float movementSpeed = 10f;
     [SerializeField] float rotationSpeed = 3f;
     [SerializeField] Quaternion rotationAmount;
-    Rigidbody rb;
+    public Rigidbody rb;
+    
 
     void Start()
     {
        PrintInstructions();
+      rb = gameObject.GetComponent<Rigidbody>();
        
     }
 
@@ -20,6 +22,8 @@ public class Mover : MonoBehaviour
     void Update()
     { 
         MovePlayer();
+        
+        
     }
 
     void PrintInstructions()
@@ -28,19 +32,22 @@ public class Mover : MonoBehaviour
     }
     void MovePlayer()
     {
-       // float xValue = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
-        //float zValue = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
-        //transform.Translate(xValue,0,zValue);
-
+       
+        //float xMovement = Input.GetAxis("Horizontal") * movementSpeed;
+        //float zMovement = Input.GetAxis("Vertical") * movementSpeed;
+        Vector3 moveBack = new Vector3(0,0,1);
+        Vector3 moveForward = new Vector3(0,0,-1);
+      
         if (Input.GetKey(KeyCode.W))
         {
-            Vector3 moveForward = new Vector3(1,0,0);
-            transform.position += Time.deltaTime * movementSpeed * moveForward;
+            
+            //transform.position += Time.deltaTime * movementSpeed * moveForward;
+            rb.AddRelativeForce(moveForward *  movementSpeed);
         }
-        if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S))
         {
-            Vector3 moveBack = new Vector3(-1,0,0);
-            transform.position += Time.deltaTime * movementSpeed * moveBack;
+            
+            rb.AddRelativeForce(moveBack * movementSpeed);
         }
         else if (Input.GetKey(KeyCode.A))
         {
@@ -56,18 +63,30 @@ public class Mover : MonoBehaviour
             //transform.Rotate(Time.deltaTime * rotationSpeed * Vector3.down);
             transform.Rotate(Time.deltaTime * rotationSpeed * Vector3.up);
         }
-         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W))
         {
             //Vector3 moveUpLeft = new Vector3(1,0,1);
-            rb.AddRelativeForce(Vector3.forward *  movementSpeed);
-            rb.AddRelativeForce(Vector3.left *  movementSpeed);
+           rb.AddRelativeForce(moveForward *  movementSpeed);
             transform.Rotate(Time.deltaTime * rotationSpeed * Vector3.down);
         }
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
         {
             //Vector3 moveUpRight = new Vector3(0,0,-1);
-           rb.AddRelativeForce(Vector3.forward *  movementSpeed);
-            rb.AddRelativeForce(Vector3.right *  movementSpeed);
+           //rb.AddRelativeForce(Vector3() *  movementSpeed);
+            rb.AddRelativeForce(moveForward *  movementSpeed);
+            transform.Rotate(Time.deltaTime * rotationSpeed * Vector3.up);
+        }
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S))
+        {
+            //Vector3 moveUpLeft = new Vector3(1,0,1);
+           rb.AddRelativeForce(moveBack *  movementSpeed);
+            transform.Rotate(Time.deltaTime * rotationSpeed * Vector3.down);
+        }
+        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
+        {
+            //Vector3 moveUpRight = new Vector3(0,0,-1);
+           //rb.AddRelativeForce(Vector3() *  movementSpeed);
+            rb.AddRelativeForce(moveBack *  movementSpeed);
             transform.Rotate(Time.deltaTime * rotationSpeed * Vector3.up);
         }
     }
