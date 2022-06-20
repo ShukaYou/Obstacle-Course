@@ -24,8 +24,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3197224711615597250}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.08536236, y: -0.15271474, z: 0.049502566, w: 0.9833316}
+  m_LocalPosition: {x: 0.78628796, y: 4.889245, z: -59.45218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3197224712328132919}
@@ -113,7 +113,7 @@ MonoBehaviour:
   rigidBody: {fileID: 3197224713354419566}
   depthBeforeSubmerged: 4
   displacementAmount: 3
-  FloaterCount: 1
+  FloaterCount: 2
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &3197224712258540720
@@ -249,15 +249,15 @@ MonoBehaviour:
   m_LookaheadSmoothing: 18
   m_LookaheadIgnoreY: 0
   m_HorizontalDamping: 2
-  m_VerticalDamping: 0.5
+  m_VerticalDamping: 0.6
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneHeight: 0.37
   m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
-  m_BiasY: 0
+  m_BiasY: -0.25799996
   m_CenterOnActivate: 1
 --- !u!1 &3197224712615823404
 GameObject:
@@ -303,9 +303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 3197224713354419566}
-  depthBeforeSubmerged: 4
+  depthBeforeSubmerged: 1.94
   displacementAmount: 3
-  FloaterCount: 1
+  FloaterCount: 2
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &3197224712703711058
@@ -352,9 +352,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 3197224713354419566}
-  depthBeforeSubmerged: 4
+  depthBeforeSubmerged: 1.94
   displacementAmount: 3
-  FloaterCount: 1
+  FloaterCount: 2
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &3197224712757927762
@@ -499,9 +499,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 3197224713354419566}
-  depthBeforeSubmerged: 4
+  depthBeforeSubmerged: 1.94
   displacementAmount: 3
-  FloaterCount: 1
+  FloaterCount: 2
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &3197224712873552263
@@ -599,7 +599,7 @@ MonoBehaviour:
   rigidBody: {fileID: 3197224713354419566}
   depthBeforeSubmerged: 4
   displacementAmount: 3
-  FloaterCount: 1
+  FloaterCount: 2
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &3197224713106951201
@@ -840,7 +840,7 @@ MonoBehaviour:
   rigidBody: {fileID: 3197224713354419566}
   depthBeforeSubmerged: 4
   displacementAmount: 3
-  FloaterCount: 1
+  FloaterCount: 2
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &3197224713596104350
@@ -870,8 +870,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3197224713596104350}
-  m_LocalRotation: {x: 0.0011120364, y: -0.9800458, z: 0.19869344, w: 0.005484998}
-  m_LocalPosition: {x: 3.552584, y: 134.20796, z: 317.36267}
+  m_LocalRotation: {x: 0.018728662, y: -0.97982097, z: 0.11119391, w: 0.16503358}
+  m_LocalPosition: {x: -150.72392, y: -22.038082, z: -148.4223}
   m_LocalScale: {x: 8.6303625, y: 8.630362, z: 8.630362}
   m_Children:
   - {fileID: 3197224711615597249}
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   rigidBody: {fileID: 3197224713354419566}
   depthBeforeSubmerged: 4
   displacementAmount: 3
-  FloaterCount: 1
+  FloaterCount: 2
   waterDrag: 0.99
   waterAngularDrag: 0.5
 --- !u!1 &3197224713682275438
@@ -1088,8 +1088,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 3197224713354419566}
-  depthBeforeSubmerged: 4
+  depthBeforeSubmerged: 1.94
   displacementAmount: 3
-  FloaterCount: 1
+  FloaterCount: 2
   waterDrag: 0.99
   waterAngularDrag: 0.5
