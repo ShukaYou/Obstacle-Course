@@ -355,6 +355,7 @@ GameObject:
   - component: {fileID: 5718672059601936100}
   - component: {fileID: 1072892520934246181}
   - component: {fileID: 5224809986894345991}
+  - component: {fileID: -3777112259667450532}
   m_Layer: 0
   m_Name: Torpedo 1
   m_TagString: Bullet
@@ -406,7 +407,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3383484872832602584}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.0054338197
   m_Height: 0.08724177
@@ -430,6 +431,19 @@ MonoBehaviour:
   FloaterCount: 1
   waterDrag: 1
   waterAngularDrag: 0.5
+--- !u!114 &-3777112259667450532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383484872832602584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff1f4cffeee9e94c91202963ac83013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 3383484872832602584}
 --- !u!1 &5598456654011876161
 GameObject:
   m_ObjectHideFlags: 0
