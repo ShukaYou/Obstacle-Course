@@ -4090,7 +4090,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3303469484698211145, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.089553036
+      value: 0.089376554
       objectReference: {fileID: 0}
     - target: {fileID: 3303469484698211145, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4098,11 +4098,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3303469484698211145, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.104996
+      value: 17.106611
       objectReference: {fileID: 0}
     - target: {fileID: 3961820875239832717, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
       propertyPath: m_Name
       value: SubwthCam 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195770224167013310, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4445307596636022327, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
       propertyPath: m_RootOrder
@@ -4147,6 +4151,10 @@ PrefabInstance:
     - target: {fileID: 4445307596636022327, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999042724606622105, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
+      propertyPath: m_Name
+      value: FireFrom
       objectReference: {fileID: 0}
     - target: {fileID: 7338608744536927299, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
       propertyPath: bulletSpeed
@@ -8967,6 +8975,11 @@ Transform:
   m_Father: {fileID: 1792417542}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &872660577 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 5718672059601936100, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+  m_PrefabInstance: {fileID: 3143592078251338965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &882942395
 GameObject:
   m_ObjectHideFlags: 0
@@ -9966,6 +9979,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966598612}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &970713697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5999042724606622105, guid: 338148bc99e0e9b40859d8e9f8cd7b6a, type: 3}
+  m_PrefabInstance: {fileID: 378591956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &978187729
 GameObject:
   m_ObjectHideFlags: 0
@@ -22644,6 +22662,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3777112259667450532, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+      propertyPath: bullit
+      value: 
+      objectReference: {fileID: 872660577}
+    - target: {fileID: -3777112259667450532, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+      propertyPath: fireFrom
+      value: 
+      objectReference: {fileID: 970713697}
+    - target: {fileID: -3777112259667450532, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+      propertyPath: bulletSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -3777112259667450532, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+      propertyPath: torpedoSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2719995212883037026, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -22691,6 +22725,22 @@ PrefabInstance:
     - target: {fileID: 3383484872832602584, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
       propertyPath: m_Name
       value: Torpedo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224809986894345991, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224809986894345991, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+      propertyPath: waterDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718672059601936100, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718672059601936100, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9012f33c0fddda4088e2c0ba686c9e7, type: 3}

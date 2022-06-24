@@ -49,16 +49,11 @@ public class playerAbilityHandler : MonoBehaviour
             Vector3 Forward = new Vector3(-1,0,0);
             if(Ship == playerShip.Sub)
             {
-                float constantSpeed = 30.0f;
+                
                 Rigidbody torpedo;
                 torpedo = Instantiate(bullet, fireFrom.transform.position, fireFrom.transform.rotation);
-                // fireRot = bullet.rotation;
-                // Give the cloned object an initial velocity along the current
-                // object's Z axis
-                Vector3 bv = new Vector3(-1,0,0);
             
-                torpedo.velocity = constantSpeed * (torpedo.velocity.normalized);
-                //torpedo.velocity = fireFrom.transform.TransformDirection(bv * bulletSpeed)
+                //torpedo.velocity = fireFrom.transform.TransformDirection(bv * bulletSpeed); 
                 
             }
         }
